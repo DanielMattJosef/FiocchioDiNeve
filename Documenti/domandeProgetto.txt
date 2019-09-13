@@ -1,0 +1,96 @@
+ogni volta si aggiunge un diario
+
+tasto destro solo per azioni aggiuntive
+
+
+il sito é il portale pubblico di accesso.
+il sito deve avere un struttura di base e avere un css accettabile
+    - guida piccola
+    - download
+    -colori appetibili
+
+live opzionale-----> quando si capisce come fare la generazione 
+la live non e complicato
+
+
+
+rimoozione o spostamento
+
+se si clicca su un punto il programma capisce che deve spostare
+pulsante rimozione 
+punto premuto si spostamento
+
+
+salvataggio
+svg no dimensioni
+
+o Raster o Vettoriale
+    chiede dimensioni
+
+salvataggio punti
+con miniatura --------> probabilmente in cartella o file singolo
+serializzazione -----> vedere
+
+cordinate ---> rispetto a cosa?         attenzione al ridimensionamento della finestra
+come é fatta la schermata di caricamento
+
+triangolo iniziale
+
+dimensioni 
+
+dobbiamo darle noi o l'utente
+
+
+tasti per utilizzo in basso
+
+
+
+
+per sinistri non cambia nulla
+
+browser
+deve funzionare su tutto
+anche con CMS
+
+sito con url che porta in git hub dve ci sarà il programma
+
+
+
+versione di java utilizzata
+
+
+
+
+
+---------------------------------------------------------------------------
+| Risposa in classe  tutti con sori
+---------------------------------------------------------------------------
+
+
+-priorita sito in java puo farlo alla fine
+-dimensioni minime 1024x768 in java e ridimensionabile
+-colori appriopriate (anche per daltonici)
+-nel sito
+    lista requisiti
+    jre
+    guida
+-live opzionale o abilitato subito
+-salvataggio in una cartella, in cartella come file, in DB o online
+-poligoni 1 o piu poligoni
+-schermata di caricamento: con miniatura file separati
+-all' avvio: home o triangolo
+-salvataggio img raster dimemsioni (500x500 0 1000x1000)
+-scelta in che formato salvare
+-tipo di file dei punti ---> uguale (serializzazione ---> oggetto deve essere sempre uguale)  csv ---> rigido
+-caricamento punti salvati ----> cartella con miniatura e file punti
+-BONUS modifica/eliminazione punti selta nostra
+-no limiti punti
+-genera fa l'anteprima poi si puo scegliere se salvare
+-triangolo cambia dimemsioni  50% della finestra iniziale
+-posizione pulsanti ascelta
+-browser --> explorer11, firefox 6 Chrome 76
+-log -----> non rischiesto
+
+
+
+motivare le scelte fatte durante la lezione (nei diari)
