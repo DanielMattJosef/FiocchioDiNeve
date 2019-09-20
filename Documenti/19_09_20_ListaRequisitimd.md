@@ -1,5 +1,4 @@
 # Lista dei Requisiti del progetto
-Programmato in Java.
 
 |ID         |Requisito          |Categoria      |Priorità | Versione|
 |-----------|-------------------|---------------|---------|---------|
