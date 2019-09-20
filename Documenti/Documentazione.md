@@ -52,11 +52,11 @@
 ### Informazioni sul progetto
 
   Questo progetto é stato affidato dai professori Luca Muggiasca e Geo Petrini della SAMT (Scuola d'Arti e Mestieri di Trevano) alle classi I3AA e I3AC, nel quale sono presente pure io Daniel Josef Matt.
-  Il progetto ci é stato consegnato il 07/09/2019 e dovrebbe essere consegnato il 20/12/2019, dopo le vacanze natalizie ci saranno le presentazioni su questo progetto.
+  Il progetto ci é stato consegnato il 07/09/2019 e dovrebbe essere consegnato il 20/12/2019, dopo le vacanze natalizie ci saranno le presentazioni su questo progetto.<br><br>
+
 
 
 ### Abstract
-
   Da bambini tutti abbiamo provato durante il tempo invernale di riprodurre con un foglio di carta spieghezzato e un forbice con la punta accuminata di creare il fiocco di neve piú complesso che avessimo mai visto.
   Questo progetto non é altro che un'evoluzione di quell'ambizione di un dettagliato ma stupendo fiocco di neve che avevamo da bambini, solamente che questa volta non utilizzeremo piú un pezzo di carta o una forbice, ma un programma scritto in JAVA12 che da un triangolo, che raffigura il foglio di carta piegato, incideremo poi dei punti che formeranno 1 o piu poligoni la cui area verra "tagliata" via dal triangolo. 
   Dopo la fase di taglio si potrà vedere il fiocco di neve creato dalla traslazione, che rappresenta la riapertura di un normale foglio di carta, del triangolo.
