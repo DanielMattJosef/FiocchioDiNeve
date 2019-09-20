@@ -2,18 +2,25 @@
 
 |ID         |Requisito          |Categoria      |Priorità | Versione|
 |-----------|-------------------|---------------|---------|---------|
-|001        |Applicativo in Java|Linguaggio     |1        |1        |
-|002        |Sito con descrizione software con possibilità di scaricare il software.(Evitare colori fastidosi) | HTML| 5|1        |
-|003        |Tagli del triangolo con il mouse Left Button|Java|1|1|
-|004        |Implementare interfaccia grafica|java|1|1|
-|005        |Area di lavoro é un triangolo. Dimensioni iniziali 50% finestra iniziale|Java|1|1|
-|006        |Triangolo ridimensionabile.Quindi anche la finestra con minimo 1024x768. inoltre deve avere la Lista req. di sistema, JRE, guida con screenshots.|Java|5|1|
-|007        |Possibile resettare i punti registrati da 1 0 piú poligoni|Java|4|1|
-|008        |Deve esistere il tasto genera fiocco|Java|2|1|
-|009        |Generazione deve avvenire in tempo reale. o subito o piu tardi dall'avvio dell'applicativo|Java|5|1|
-|010        |I punti devono poter essere spostati o rimossi|Java|4|1|
-|011        |Salvataggio del/i poligoni di taglio in file o DataBase(a scelta). consigliato JSON, CSV o serializzazione|Java|6|1|
-|012        |Salvare il fiocco di neve generato con PNG o SVG|Java|4|1|
-|013        |Il salvataggio in raster chiede le dimensioni (di default 500x500 o 1000x1000)|Java|4|1|
-|014        |All'avvio della finestra o home o subito triangolo|JAVA|6|1|
-|
+|001|Applicativo in Java|Linguaggio     |1        |1        |
+|002|Sito del progetto|Presentazione/Descrizione progetto|4|1|
+|003|Il sito non deve avere colori fastidosi|struttura sito|6|1|
+|004|Il sito deve contenere una piccola guida di utilizzo con degli screenshots, i requisiti del sistema, la JRE|struttura sito|6|1|
+|005|Implementare interfaccia grafica| programmazione |1|1|
+|006|Finestra all'avvio dimensioni minime di 1024x768|layout applicazione|4|1|
+|007|Area di lavoro é un triangolo. dimensioni 50%|area lavoro|1|1|
+|008|Il triangolo deve essere sempre centrato.|layout applicazione|3|1|
+|009|Triangolo é ridimensionabile.|layout applicazione|4|1|
+|010|Tagli del triangolo con il mouse Left Button| Logica applicativo |1|1|
+|011|I punti di taglio possono avere la forma di uno o piú poligoni.|logica applicativo|1|1|
+|012|I punti del triangolo si possono resettare.|Logica applicativo|4|1|
+|013|I punti di taglio possono essere spostati o rimossi.|Logica applicativo|7|1|
+|014|Il/I poligono/i di taglio devono poter essere salvati o in file o DB. (Consigliato in JSON, CSV o serializzazione oggetto). con anche una miniatura|logica applicativo|6|1|
+|015|Tasto di generazione del fiocco di neve prodotto che mostra un'anteprima.|Logica applicativo|1|1|
+|016|Generazione in tempo reale sin dal l'inizio oppure quando vuole l'utente|logica applicativo|4|1|
+|017|Possibilità di salvare il fiocco di neve in PNG o SVG (scelta dell'utente).|logica applicativo|4|1|
+|018|Salvare il fiocco di neve con dimensioni correnti (finestra applicativo) o 500 o 1000.|logica applicativo|4|1|
+|019|Il percorso di salvataggio puo essere di default ma meglio se lo sceglie l'utente.|logica applicativo|4|1|
+|020|Consegna .jar sul sito e il .class su github.|logica applicativo|6|1|
+
+
