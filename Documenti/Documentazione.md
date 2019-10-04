@@ -217,6 +217,10 @@ presenta? Che hw sarà disponibile durante lo sviluppo?
 
 ## Progettazione
 
+L'applicativo all'apertura si aprira con una finestra che chiede se si vuole creare o caricare un fiocco utilizzando 2 pulsanti.
+Se si preme <b>Crea</b> si aprira la finestra con il triangolo che ha la possibilita di "mettere" i punti che formerando il o i poligoni per tagliare questo trangolo che poi con il tasto <b>Genera</b> viene traslato fino a formare il fiocco di neve.
+
+
 Questo capitolo descrive esaustivamente come deve essere realizzato il
 prodotto fin nei suoi dettagli. Una buona progettazione permette
 all’esecutore di evitare fraintendimenti e imprecisioni
