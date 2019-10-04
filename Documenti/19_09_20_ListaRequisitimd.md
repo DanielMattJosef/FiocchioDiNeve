@@ -8,7 +8,7 @@
 |004|Il sito deve contenere una piccola guida di utilizzo con degli screenshots, i requisiti del sistema, la JRE|struttura sito|6|1|
 |005|Implementare interfaccia grafica| programmazione |1|1|
 |006|Finestra all'avvio dimensioni minime di 1024x768|layout applicazione|4|1|
-|007|Area di lavoro é un triangolo. dimensioni 50%|area lavoro|1|1|
+|007|Area di lavoro é un triangolo. dimensioni 50% rispetto alla finestra|area lavoro|1|1|
 |008|Il triangolo deve essere sempre centrato.|layout applicazione|3|1|
 |009|Triangolo é ridimensionabile.|layout applicazione|4|1|
 |010|Tagli del triangolo con il mouse Left Button| Logica applicativo |1|1|
