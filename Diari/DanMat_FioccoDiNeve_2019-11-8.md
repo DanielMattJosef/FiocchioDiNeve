@@ -1,6 +1,6 @@
 # Fiocco di Neve | Diario di Lavoro 
 ##### Daniel Matt
-### Trevano, 25.10.2019
+### Trevano, 8.11.2019
 
 ## Lavori Svolti
 
