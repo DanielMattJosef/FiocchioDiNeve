@@ -60,31 +60,7 @@
   Da bambini tutti abbiamo provato durante il tempo invernale di riprodurre con un foglio di carta spieghezzato e un forbice con la punta accuminata di creare il fiocco di neve piú complesso che avessimo mai visto.
   Questo progetto non é altro che un'evoluzione di quell'ambizione di un dettagliato ma stupendo fiocco di neve che avevamo da bambini, solamente che questa volta non utilizzeremo piú un pezzo di carta o una forbice, ma un programma scritto in JAVA12 che da un triangolo, che raffigura il foglio di carta piegato, incideremo poi dei punti che formeranno 1 o piu poligoni la cui area verra "tagliata" via dal triangolo. 
   Dopo la fase di taglio si potrà vedere il fiocco di neve creato dalla traslazione, che rappresenta la riapertura di un normale foglio di carta, del triangolo.
-  
-  
-  
-  E’ una breve e accurata rappresentazione dei contenuti di un documento,
-  senza notazioni critiche o valutazioni. Lo scopo di un abstract efficace
-  dovrebbe essere quello di far conoscere all’utente il contenuto di base
-  di un documento e metterlo nella condizione di decidere se risponde ai
-  suoi interessi e se è opportuno il ricorso al documento originale.
 
-  Può contenere alcuni o tutti gli elementi seguenti:
-
-  -   **Background/Situazione iniziale**
-
-  -   **Descrizione del problema e motivazione**: Che problema ho cercato
-      di risolvere? Questa sezione dovrebbe includere l'importanza del
-      vostro lavoro, la difficoltà dell'area e l'effetto che potrebbe
-      avere se portato a termine con successo.
-
-  -   **Approccio/Metodi**: Come ho ottenuto dei progressi? Come ho
-      risolto il problema (tecniche…)? Quale è stata l’entità del mio
-      lavoro? Che fattori importanti controllo, ignoro o misuro?
-
-  -   **Risultati**: Quale è la risposta? Quali sono i risultati? Quanto è
-      più veloce, più sicuro, più economico o in qualche altro aspetto
-      migliore di altri prodotti/soluzioni?
 
 ### Scopo
 
@@ -103,56 +79,30 @@
   Gli utenti non riuscendo a creare i fiocchi in modo tradizionale utilizzando carta e forbice, decidono di favorire di questo applicativo e creare fiocchi di neve di qualsiasi forma. Di per sé  l'utente non deve avere conoscienze di programmazione per eseguire la mia applicazione.
 
 
-  -   Esistono convenzioni/standard applicati nel dominio?
-
-  -   Che conoscenze teoriche bisogna avere/acquisire per poter operare
-      efficacemente nel dominio?
-
-
 ### Analisi e specifica dei requisiti
 
-  Il progettista, dopo aver ricevuto il mandato, in collaborazione con il
-  committente redige una lista di requisiti. Durante questi incontri,
-  tramite interviste (da inserire nei diari), il progettista deve cercare
-  di rispondere alle seguenti domande:
-
-  -   Quali sono i bisogni del committente?
-
-  -   Quali funzioni deve svolgere il prodotto?
-
-  -   Come devono essere implementate?
-
-  -   L’utente, come vorrebbe/dovrebbe interagire con il prodotto?
-
-  -   Come verrà utilizzato il prodotto?
-
-  -   Che tipo di interfaccia si immagina?
-
-  -   Che prestazioni minime deve fornire il prodotto?
-
-  -   Che grado di sicurezza deve avere il prodotto?
-
-  -   …
-
-  In base alla lista dei requisiti e all’analisi degli stessi, il
-  progettista redige una *specifica dei requisiti* in cui elenca e
-  descrive in modo dettagliato quali sono le funzionalità che il prodotto
-  fornirà. La specifica dovrebbe essere abbastanza dettagliata da poter
-  essere utilizzata come base per lo sviluppo, ma non troppo; ad esempio
-  non dovrebbe contenere dettagli di implementazione, o definizioni
-  dettagliate dell’interfaccia grafica a meno che questi non siano
-  considerati cruciali. Non si deve scordare che i requisiti non
-  rappresentano delle attività bensì delle caratteristiche che il prodotto
-  dovrà possedere.
-
-
-
-
-  |**ID**	|**Nome**			|**Priorità**|**Vers**|**Note**  |
-  |----|------------|--------|----|------|
-  |Req-12|Dovrà esserci una maschera di login|1|1.0|...|
-  |Req-13|Si dovranno poter immettere nuovi allievi|1|1.0|...|
-  |Req-14|Dovrà essere possibile la ricerca di allievi|1|1.0|...|
+|ID         |Requisito          |Categoria      |Priorità | Versione|
+|-----------|-------------------|---------------|---------|---------|
+|001|Applicativo in Java|Linguaggio     |1        |1        |
+|002|Sito del progetto|Presentazione/Descrizione progetto|4|1|
+|003|Il sito non deve avere colori fastidosi|struttura sito|6|1|
+|004|Il sito deve contenere una piccola guida di utilizzo con degli screenshots, i requisiti del sistema, la JRE|struttura sito|6|1|
+|005|Implementare interfaccia grafica| programmazione |1|1|
+|006|Finestra all'avvio dimensioni minime di 1024x768|layout applicazione|4|1|
+|007|Area di lavoro é un triangolo. dimensioni 50% rispetto alla finestra|area lavoro|1|1|
+|008|Il triangolo deve essere sempre centrato.|layout applicazione|3|1|
+|009|Triangolo é ridimensionabile.|layout applicazione|4|1|
+|010|Tagli del triangolo con il mouse Left Button| Logica applicativo |1|1|
+|011|I punti di taglio possono avere la forma di uno o piú poligoni.|logica applicativo|1|1|
+|012|I punti del triangolo si possono resettare.|Logica applicativo|4|1|
+|013|I punti di taglio possono essere spostati o rimossi.|Logica applicativo|7|1|
+|014|Il/I poligono/i di taglio devono poter essere salvati o in file o DB. (Consigliato in JSON, CSV o serializzazione oggetto). con anche una miniatura|logica applicativo|6|1|
+|015|Tasto di generazione del fiocco di neve prodotto che mostra un'anteprima.|Logica applicativo|1|1|
+|016|Generazione in tempo reale sin dal l'inizio oppure quando vuole l'utente|logica applicativo|4|1|
+|017|Possibilità di salvare il fiocco di neve in PNG o SVG (scelta dell'utente).|logica applicativo|4|1|
+|018|Salvare il fiocco di neve con dimensioni correnti (finestra applicativo) o 500 o 1000.|logica applicativo|4|1|
+|019|Il percorso di salvataggio puo essere di default ma meglio se lo sceglie l'utente.|logica applicativo|4|1|
+|020|Consegna .jar sul sito e il .class su github.|logica applicativo|6|1|
   
   
 
@@ -162,7 +112,9 @@
 
 **ID**: identificativo univoco del requisito
 
-**Nome**: breve descrizione del requisito
+**Requisito**: breve descrizione del requisito
+
+**Categoria**: Indica la categoria del requisito e le conoscenze che bisogna avere per completare questo reauisito
 
 **Priorità**: indica l’importanza di un requisito nell’insieme del
 progetto, definita assieme al committente. Ad esempio poter disporre di
@@ -175,17 +127,6 @@ requisito avrà una versione aggiornata.
 
 Sulla documentazione apparirà solamente l’ultima versione, mentre le
 vecchie dovranno essere inserite nei diari.
-
-**Note**: eventuali osservazioni importanti o riferimenti ad altri
-requisiti.
-
-**Sotto requisiti**: elementi che compongono il requisito.
-
-
-### Use case
-
-I casi d’uso rappresentano l’interazione tra i vari attori e le
-funzionalità del prodotto.
 
 ### Pianificazione
 
@@ -218,13 +159,12 @@ presenta? Che hw sarà disponibile durante lo sviluppo?
 ## Progettazione
 
 L'applicativo all'apertura si aprira con una finestra che chiede se si vuole creare o caricare un fiocco utilizzando 2 pulsanti.
-Se si preme <b>Crea</b> si aprira la finestra con il triangolo che ha la possibilita di "mettere" i punti che formerando il o i poligoni per tagliare questo trangolo che poi con il tasto <b>Genera</b> viene traslato fino a formare il fiocco di neve.
+Se si preme <b>Crea</b> si aprira la finestra con il triangolo che ha la possibilita di "mettere" i punti che formerando il/i poligono/i per tagliare questo triangolo che con il pulsante <b>Genera</b> viene spechciato e poi ruotato fino a formare il fiocco di neve. Nella finenstra di creazione del fiocco, quello con il triangolo, si potrà Cambiare colore del triangolo e del fiocco. Inoltre si possono cancellare tutti i poligoni di taglio creati o cancellare solo l'ultimo punto dell'ultimo poligono. Ci sara poi anche un pulsante che salva i punti dei poligoni di taglio su un file csv nel seguente formato: x,y e quando finisce un poligono verra stapato un . su una riga.
+Inoltre ci sarà la possibilità di salvare il fiocco di neve come immagine Vettoriale(.svg) o Raster(.jpeg).
+Se, invece, si vuole aprire un fiocco di neve gia esistente si dovrà premere il pulsante <b>Apri</b> che aprirà una finestra di dialogo che permettera di aprire file csv con i punti di poligoni di taglio.
 
-
-Questo capitolo descrive esaustivamente come deve essere realizzato il
-prodotto fin nei suoi dettagli. Una buona progettazione permette
-all’esecutore di evitare fraintendimenti e imprecisioni
-nell’implementazione del prodotto.
+Dopo la programmazione dell'applicativo si dovrà costruire un sito internet per esso dove lo si potra scaricare e scaricare e saranno a disposizione dei fiocchi prefatti in file csv.
+Il sito avra un tema giustamente invernale, ci sara una glleria di immagini dei fiocchi di neve.
 
 ### Design dell’architettura del sistema
 
@@ -352,34 +292,6 @@ facilmente generalizzabili o sono specifici di un caso particolare? ecc
   Cosa ho imparato in questo progetto? ecc
 
 ## Bibliografia
-
-### Bibliografia per articoli di riviste
-1.  Cognome e nome (o iniziali) dell’autore o degli autori, o nome
-    dell’organizzazione,
-
-2.  Titolo dell’articolo (tra virgolette),
-
-3.  Titolo della rivista (in italico),
-
-4.  Anno e numero
-
-5.  Pagina iniziale dell’articolo,
-
-### Bibliografia per libri
-
-
-1.  Cognome e nome (o iniziali) dell’autore o degli autori, o nome
-    dell’organizzazione,
-
-2.  Titolo del libro (in italico),
-
-3.  ev. Numero di edizione,
-
-4.  Nome dell’editore,
-
-5.  Anno di pubblicazione,
-
-6.  ISBN.
 
 ### Sitografia
 
