@@ -9,7 +9,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 public class GUI extends javax.swing.JFrame {
 
     /**
-     * Metodo costruttore.
+     * Metodo costruttore della home del Progetto.
      */
     public GUI() {
         initComponents();

@@ -128,7 +128,5 @@ public class FioccoPanel extends JPanel {
                     JOptionPane.ERROR_MESSAGE,
                     null, null, null);
         }
-    }
-
-    
+    } 
 }

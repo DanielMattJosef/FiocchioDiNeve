@@ -35,6 +35,7 @@ public class GeneratoreFiocco extends javax.swing.JFrame {
         savePoint = new javax.swing.JButton();
         generaFiocco = new javax.swing.JButton();
         saveAsSVG = new javax.swing.JButton();
+        saveAsPNG = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         back = new javax.swing.JButton();
         fioccoPanel1 = new FioccoPanel();
@@ -113,13 +114,16 @@ public class GeneratoreFiocco extends javax.swing.JFrame {
         });
         jPanel2.add(generaFiocco);
 
-        saveAsSVG.setText("Save SnowFlake to SVG");
+        saveAsSVG.setText("Save SnowFlake as SVG");
         saveAsSVG.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 saveAsSVGActionPerformed(evt);
             }
         });
         jPanel2.add(saveAsSVG);
+
+        saveAsPNG.setText("Save Snowflake as PNG");
+        jPanel2.add(saveAsPNG);
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.PAGE_END);
 
@@ -141,7 +145,7 @@ public class GeneratoreFiocco extends javax.swing.JFrame {
         fioccoPanel1.setLayout(fioccoPanel1Layout);
         fioccoPanel1Layout.setHorizontalGroup(
             fioccoPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 563, Short.MAX_VALUE)
+            .addGap(0, 713, Short.MAX_VALUE)
         );
         fioccoPanel1Layout.setVerticalGroup(
             fioccoPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -149,8 +153,6 @@ public class GeneratoreFiocco extends javax.swing.JFrame {
         );
 
         getContentPane().add(fioccoPanel1, java.awt.BorderLayout.CENTER);
-
-        triangoloPanel.setBackground(new java.awt.Color(0, 0, 102));
 
         javax.swing.GroupLayout triangoloPanelLayout = new javax.swing.GroupLayout(triangoloPanel);
         triangoloPanel.setLayout(triangoloPanelLayout);
@@ -313,6 +315,7 @@ public class GeneratoreFiocco extends javax.swing.JFrame {
     private javax.swing.JButton render;
     private javax.swing.JToggleButton renderTriangolo;
     private javax.swing.JButton resetPoints;
+    private javax.swing.JButton saveAsPNG;
     private javax.swing.JButton saveAsSVG;
     private javax.swing.JButton savePoint;
     private javax.swing.JButton setColorFiocco;
