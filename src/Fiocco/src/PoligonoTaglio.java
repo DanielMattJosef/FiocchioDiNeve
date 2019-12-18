@@ -20,7 +20,12 @@ public class PoligonoTaglio {
     }
     
     public void setPoligoni(ArrayList<Polygon> taglio){
-        this.poligoni = taglio;
+        ArrayList<Polygon> finale = new ArrayList<>();
+        finale = taglio;
+        for(int i = 0;i < finale.size();i++){
+            finale.get(i).translate(-200, -336);
+        }
+        this.poligoni = finale;
     }
 
     private int[] getXPoints(Polygon taglio) {

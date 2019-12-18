@@ -6,21 +6,40 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
- * Legge un file csv e 
+ * Legge un file csv e ne trae informazioni per costruire i poligoni di taglio.
  * @author Daniel Matt
  */
 public class LoadPoints {
 
+    /**
+     * Lista di poligoni di taglio.
+     */
     public ArrayList<Polygon> poligoni;
+    
+    /**
+     * Lista delle cordinate X dei poligoni di taglio.
+     */
     private ArrayList<Integer> puntiX;
+    
+    /**
+     * Lista delle cordinate Y dei poligoni di taglio.
+     */
     private ArrayList<Integer> puntiY;
 
+    /**
+     * Metodo costrutture.
+     */
     public LoadPoints() {
         poligoni = new ArrayList<>();
         puntiX = new ArrayList<>();
         puntiY = new ArrayList<>();
     }
 
+    /**
+     * Si occupa di leggere dal file csv i poligoni di taglio.
+     * @param file percorso del file csv.
+     * @return lista di poligoni di taglio.
+     */
     public ArrayList<Polygon> getPoligoni(String file) {
         String line = "";
         String cvsSplitBy = ",";

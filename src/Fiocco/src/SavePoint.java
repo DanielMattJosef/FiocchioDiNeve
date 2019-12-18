@@ -24,6 +24,7 @@ public class SavePoint {
                 sb.append(",");
                 sb.append(yPuntiT[j]);
                 sb.append('\n');
+                System.out.println("...");
             }
             sb.append(".\n");
             

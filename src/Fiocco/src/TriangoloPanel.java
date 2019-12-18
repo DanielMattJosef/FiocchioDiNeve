@@ -18,12 +18,13 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  * É il panel sul quae viene disegnato il trangolo.
+ *
  * @author Daniel Matt
  */
 public class TriangoloPanel extends JPanel implements MouseListener {
 
     /**
-     * 
+     *
      */
     private Polygon poligono;
 
@@ -36,7 +37,7 @@ public class TriangoloPanel extends JPanel implements MouseListener {
      * Ultima larghezza del panel.
      */
     private int lastWidth = 0;
-    
+
     /**
      * Ultima altezza del panel.
      */
@@ -46,12 +47,12 @@ public class TriangoloPanel extends JPanel implements MouseListener {
      * Classe che rappresenta i poligoni di taglio.
      */
     private static PoligonoTaglio taglio = new PoligonoTaglio();
-    
+
     /**
      * Classe che rappresenta il triangolo di base.
      */
     private static Triangolo triangolo = new Triangolo();
-    
+
     /**
      * Classe che si occupa di salvare i punti de poligoni di taglio.
      */
@@ -71,23 +72,25 @@ public class TriangoloPanel extends JPanel implements MouseListener {
      * Lista che contiene le aree dei triangoli che formano il fiocco.
      */
     public ArrayList<Shape> fiocco = new ArrayList<>();
-    
+
     /**
      * Colore del triangolo.
      */
-    private Color colorTriangolo = Color.green;
+    private Color colorTriangolo = Color.WHITE;
 
     /**
      * Ritorna la lista con le aree del fiocco.
+     *
      * @return lista di aree.
      */
     public ArrayList<Shape> getFiocco() {
         return fiocco;
     }
-    
+
     /**
      * Setta un nuovo colore per il triangolo.
-     * @param triangolo 
+     *
+     * @param triangolo
      */
     public void setColor(Color triangolo) {
         this.colorTriangolo = triangolo;
@@ -95,16 +98,11 @@ public class TriangoloPanel extends JPanel implements MouseListener {
 
     /**
      * Setta i poligoni di taglio letti da un file csv.
+     *
      * @param poligoni di taglio salvati.
      */
     public void setPoligoni(ArrayList<Polygon> poligoni) {
         taglio.setPoligoni(poligoni);
-        for (int i = 0; i < taglio.poligoni.size(); i++) {
-            for (int j = 0; j < taglio.poligoni.get(i).xpoints.length - 1; j++) {
-                System.out.println("X:" + taglio.poligoni.get(i).xpoints[j] + " Y:" + taglio.poligoni.get(i).ypoints[j]);
-            }
-        }
-        //repaint();
     }
 
     /**
@@ -119,7 +117,8 @@ public class TriangoloPanel extends JPanel implements MouseListener {
     }
 
     /**
-     * Metodo che ridisgna i punti di taglio quando il panel viene ridimensionato.
+     * Metodo che ridisgna i punti di taglio quando il panel viene
+     * ridimensionato.
      */
     public void update() {
         if (!(getWidth() == lastWidth && getHeight() == lastHeight)) {
@@ -150,12 +149,13 @@ public class TriangoloPanel extends JPanel implements MouseListener {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 349, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
     /**
      * Si occupa di disegnare sul panel
+     *
      * @param g é il contesto grafico.
      */
     public void paintComponent(Graphics g) {
@@ -163,14 +163,15 @@ public class TriangoloPanel extends JPanel implements MouseListener {
         update();
         Graphics2D g2 = (Graphics2D) g;
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        
         triangolo.getTriangoloPoints(getWidth(), getHeight());
 
         if (!showRender) {
 
-            g.setColor(colorTriangolo);
-            g.fillPolygon(triangolo.getPolygon());
+            g2.setColor(colorTriangolo);
+            g2.fillPolygon(triangolo.getPolygon());
 
-            g.setColor(Color.ORANGE);
+            g2.setColor(Color.ORANGE);
 
             if (taglio.puntiPoligoni.size() > 0) {
                 Polygon temp = new Polygon();
@@ -179,15 +180,18 @@ public class TriangoloPanel extends JPanel implements MouseListener {
                 }
 
                 for (int i = 0; i < taglio.puntiPoligoni.size(); i++) {
-                    g.fillOval(taglio.puntiPoligoni.get(i).x - radius, taglio.puntiPoligoni.get(i).y - radius, radius * 2, radius * 2);
-                    g.fillPolygon(temp);
+                    g2.fillOval(taglio.puntiPoligoni.get(i).x - radius, taglio.puntiPoligoni.get(i).y - radius, radius * 2, radius * 2);
+                    g2.fillPolygon(temp);
 
                 }
             }
-            
-            g.setColor(Color.BLUE);
+
+            g.setColor(Color.YELLOW);
             for (int i = 0; i < taglio.poligoni.size(); i++) {
-                g.fillPolygon(taglio.poligoni.get(i));
+                for(int j = 0; j < taglio.poligoni.get(i).npoints;j++){
+                    g2.fillPolygon(taglio.poligoni.get(i));
+                    
+                }
             }
         } else {
             g.setColor(colorTriangolo);
@@ -202,10 +206,10 @@ public class TriangoloPanel extends JPanel implements MouseListener {
                 for (int i = 0; i < taglio.puntiPoligoni.size(); i++) {
                     temp.addPoint(taglio.puntiPoligoni.get(i).x, taglio.puntiPoligoni.get(i).y);
                 }
-
+                
                 for (int i = 0; i < taglio.puntiPoligoni.size(); i++) {
-                    g.fillOval(taglio.puntiPoligoni.get(i).x - radius, taglio.puntiPoligoni.get(i).y - radius, radius * 2, radius * 2);
-                    g.fillPolygon(temp);
+                    g2.fillOval(taglio.puntiPoligoni.get(i).x - radius, taglio.puntiPoligoni.get(i).y - radius, radius * 2, radius * 2);
+                    g2.fillPolygon(temp);
                 }
             }
         }
@@ -277,6 +281,7 @@ public class TriangoloPanel extends JPanel implements MouseListener {
 
     /**
      * Metodo richiamato quando il muose viene premuto e rilasciato.
+     *
      * @param e evento del mouse.
      */
     public void mouseReleased(MouseEvent e) {
@@ -297,27 +302,29 @@ public class TriangoloPanel extends JPanel implements MouseListener {
 
     /**
      * Si occupa di specchiare un area e riportarla nella posizione originale.
+     *
      * @param fiocco area da specchiare.
      * @return area specchiata.
      */
     public Shape mirrorTriangle(Area fiocco) {
 
-        AffineTransform first = new AffineTransform();
-        first.scale(-1, 1);
+        AffineTransform specchia = new AffineTransform();
+        specchia.scale(-1, 1);
 
-        AffineTransform toCenter = new AffineTransform();
-        toCenter.translate(-(triangolo.getApiceTriangolo().x) * 2, 0);
+        AffineTransform toOrigin = new AffineTransform();
+        toOrigin.translate(-(triangolo.getApiceTriangolo().x) * 2, 0);
 
         AffineTransform tot = new AffineTransform();
 
-        tot.concatenate(first);
-        tot.concatenate(toCenter);
+        tot.concatenate(specchia);
+        tot.concatenate(toOrigin);
 
         return tot.createTransformedShape(fiocco);
     }
 
     /**
      * Si occupa di ruotare un area in base a un angolo dato.
+     *
      * @param fiocco area da ruotare.
      * @param angolo di quanto si deve ruotare l'area.
      * @return area ruotata.
@@ -330,13 +337,14 @@ public class TriangoloPanel extends JPanel implements MouseListener {
 
     /**
      * Genera il fiocco.
+     *
      * @return fiocco completo
      */
     public ArrayList<Shape> generaFiocco() {
         triangoloTagliato = new TriangoloTagliato(triangolo.getPolygon(), taglio.poligoni);
         fiocco.clear();
         Area areaTaglio = triangoloTagliato.getAreaTagliato();
-        for (int i = 0; i < 36; i += 3) {
+        for (int i = 0; i < 36; i += 6) {
             Shape flip = mirrorTriangle(areaTaglio);
             fiocco.add(rotateTriangle(flip, i * 10));
             fiocco.add(rotateTriangle(areaTaglio, i * 10));

@@ -1,6 +1,5 @@
 import java.awt.Polygon;
 import java.awt.geom.Area;
-import java.awt.geom.PathIterator;
 import java.util.ArrayList;
 
 /**

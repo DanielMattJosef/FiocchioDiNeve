@@ -6,8 +6,12 @@ import java.awt.Point;
 import java.awt.RenderingHints;
 import java.awt.Shape;
 import java.awt.geom.AffineTransform;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.io.Writer;
 import java.util.ArrayList;
+import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
@@ -20,7 +24,7 @@ import org.w3c.dom.DOMImplementation;
 
 /**
  * É il panel nel quale viene disegnato il fiocco.
- * @author danie
+ * @author Daniel
  */
 public class FioccoPanel extends JPanel {
 
@@ -108,7 +112,7 @@ public class FioccoPanel extends JPanel {
      * Si occupe di salvare un immagine vettoriale del fiocco creato.
      * @param filename percorso del file creato (in stringa).
      */
-    public void generateSVG(String filename){
+    public void generaSVG(String path){
         DOMImplementation domImpl = GenericDOMImplementation.getDOMImplementation();
         String svgNS = "http://www.w3.org/2000/svg";
         Document document = domImpl.createDocument(svgNS, "svg", null);
@@ -117,7 +121,7 @@ public class FioccoPanel extends JPanel {
         boolean useCSS = true;
         Writer out;
         try {
-            svgGenerator.stream(filename+".svg");
+            svgGenerator.stream(path+".svg");
         } catch (SVGGraphics2DIOException ex) {
             JOptionPane jop = new JOptionPane();
             jop.showOptionDialog(
@@ -128,5 +132,35 @@ public class FioccoPanel extends JPanel {
                     JOptionPane.ERROR_MESSAGE,
                     null, null, null);
         }
-    } 
+    }
+    
+    
+    
+    
+    
+    public void generaPNG(String path){
+        try{
+            BufferedImage buffImg = new BufferedImage
+                (1024, 768, BufferedImage.TYPE_INT_ARGB);
+            Graphics2D g2 = buffImg.createGraphics();
+            g2.setColor(Color.BLACK);
+            g2.fillRect(0, 0, 1024, 768);
+            g2.setColor(coloreFiocco);
+            for(int i = 0; i < fiocco.size();i++){
+                g2.fill(toCenter(fiocco.get(i)));
+            }
+            ImageIO.write(buffImg, "PNG", new File(path));
+        } catch (IOException e) {
+            JOptionPane jop = new JOptionPane();
+            jop.showOptionDialog(
+                    null,
+                    "Cannot create file",
+                    "Error creating file",
+                    JOptionPane.DEFAULT_OPTION,
+                    JOptionPane.ERROR_MESSAGE,
+                    null, null, null);
+        }
+        
+    }
+    
 }

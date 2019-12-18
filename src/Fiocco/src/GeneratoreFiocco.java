@@ -123,6 +123,11 @@ public class GeneratoreFiocco extends javax.swing.JFrame {
         jPanel2.add(saveAsSVG);
 
         saveAsPNG.setText("Save Snowflake as PNG");
+        saveAsPNG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveAsPNGActionPerformed(evt);
+            }
+        });
         jPanel2.add(saveAsPNG);
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.PAGE_END);
@@ -246,7 +251,7 @@ public class GeneratoreFiocco extends javax.swing.JFrame {
         jfc.showDialog(null, "Save");
         try{
             String handle = new String(jfc.getSelectedFile().toPath().toString());
-            fioccoPanel1.generateSVG(handle);
+            fioccoPanel1.generaSVG(handle);
         }catch(NullPointerException npe){
         }
         
@@ -267,6 +272,18 @@ public class GeneratoreFiocco extends javax.swing.JFrame {
     private void setColorFioccoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_setColorFioccoActionPerformed
         fioccoPanel1.setColor(JColorChooser.showDialog(null, "Farbauswahl", null));
     }//GEN-LAST:event_setColorFioccoActionPerformed
+
+    private void saveAsPNGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveAsPNGActionPerformed
+        JFileChooser jfc = new JFileChooser();
+        FileNameExtensionFilter fnf = new FileNameExtensionFilter("PNG File (*.png)", "PNG");
+        jfc.setFileFilter(fnf);
+        jfc.showDialog(null, "Save");
+        try{
+            String handle = new String(jfc.getSelectedFile().toPath().toString());
+            fioccoPanel1.generaPNG(handle);
+        }catch(NullPointerException npe){
+        }
+    }//GEN-LAST:event_saveAsPNGActionPerformed
 
     /**
      * @param args the command line arguments
