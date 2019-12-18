@@ -24,8 +24,7 @@ public class GeneratoreFiocco extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        render = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
+        buttonsPanel = new javax.swing.JPanel();
         setColorTriangolo = new javax.swing.JButton();
         setColorFiocco = new javax.swing.JButton();
         resetPoints = new javax.swing.JButton();
@@ -36,103 +35,130 @@ public class GeneratoreFiocco extends javax.swing.JFrame {
         generaFiocco = new javax.swing.JButton();
         saveAsSVG = new javax.swing.JButton();
         saveAsPNG = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
+        panelBack = new javax.swing.JPanel();
         back = new javax.swing.JButton();
         fioccoPanel1 = new FioccoPanel();
         triangoloPanel = new TriangoloPanel();
-
-        render.setText("Render");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 153));
         setMinimumSize(new java.awt.Dimension(1024, 768));
 
-        jPanel2.setBackground(new java.awt.Color(0, 51, 204));
+        buttonsPanel.setBackground(new java.awt.Color(0, 51, 204));
 
         setColorTriangolo.setText("Set Triangle Color");
+        setColorTriangolo.setFocusable(false);
+        setColorTriangolo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        setColorTriangolo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         setColorTriangolo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 setColorTriangoloActionPerformed(evt);
             }
         });
-        jPanel2.add(setColorTriangolo);
+        buttonsPanel.add(setColorTriangolo);
 
         setColorFiocco.setText("Set SnowFlake Color");
+        setColorFiocco.setFocusable(false);
+        setColorFiocco.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        setColorFiocco.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         setColorFiocco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 setColorFioccoActionPerformed(evt);
             }
         });
-        jPanel2.add(setColorFiocco);
+        buttonsPanel.add(setColorFiocco);
 
-        resetPoints.setBackground(new java.awt.Color(0, 51, 204));
         resetPoints.setText("Reset");
+        resetPoints.setFocusable(false);
+        resetPoints.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        resetPoints.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         resetPoints.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 resetPointsActionPerformed(evt);
             }
         });
-        jPanel2.add(resetPoints);
+        buttonsPanel.add(resetPoints);
 
         addPolygon.setText("Add Polygon");
+        addPolygon.setFocusable(false);
+        addPolygon.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        addPolygon.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         addPolygon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addPolygonActionPerformed(evt);
             }
         });
-        jPanel2.add(addPolygon);
+        buttonsPanel.add(addPolygon);
 
         removeLastPoint.setText("Remove Last Point");
+        removeLastPoint.setFocusable(false);
+        removeLastPoint.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        removeLastPoint.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         removeLastPoint.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 removeLastPointActionPerformed(evt);
             }
         });
-        jPanel2.add(removeLastPoint);
+        buttonsPanel.add(removeLastPoint);
 
         renderTriangolo.setText("Render");
+        renderTriangolo.setFocusable(false);
+        renderTriangolo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        renderTriangolo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         renderTriangolo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 renderTriangoloActionPerformed(evt);
             }
         });
-        jPanel2.add(renderTriangolo);
+        buttonsPanel.add(renderTriangolo);
 
         savePoint.setText("Save Polygons");
+        savePoint.setFocusable(false);
+        savePoint.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        savePoint.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         savePoint.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 savePointActionPerformed(evt);
             }
         });
-        jPanel2.add(savePoint);
+        buttonsPanel.add(savePoint);
 
         generaFiocco.setText("Genera");
+        generaFiocco.setFocusable(false);
+        generaFiocco.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        generaFiocco.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         generaFiocco.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 generaFioccoActionPerformed(evt);
             }
         });
-        jPanel2.add(generaFiocco);
+        buttonsPanel.add(generaFiocco);
 
         saveAsSVG.setText("Save SnowFlake as SVG");
+        saveAsSVG.setFocusable(false);
+        saveAsSVG.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        saveAsSVG.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         saveAsSVG.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 saveAsSVGActionPerformed(evt);
             }
         });
-        jPanel2.add(saveAsSVG);
+        buttonsPanel.add(saveAsSVG);
 
         saveAsPNG.setText("Save Snowflake as PNG");
+        saveAsPNG.setFocusable(false);
+        saveAsPNG.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        saveAsPNG.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         saveAsPNG.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 saveAsPNGActionPerformed(evt);
             }
         });
-        jPanel2.add(saveAsPNG);
+        buttonsPanel.add(saveAsPNG);
 
-        getContentPane().add(jPanel2, java.awt.BorderLayout.PAGE_END);
+        getContentPane().add(buttonsPanel, java.awt.BorderLayout.PAGE_END);
 
-        jPanel3.setLayout(new java.awt.CardLayout());
+        panelBack.setLayout(new java.awt.CardLayout());
 
         back.setText("Back");
         back.addActionListener(new java.awt.event.ActionListener() {
@@ -140,9 +166,9 @@ public class GeneratoreFiocco extends javax.swing.JFrame {
                 backActionPerformed(evt);
             }
         });
-        jPanel3.add(back, "card2");
+        panelBack.add(back, "card2");
 
-        getContentPane().add(jPanel3, java.awt.BorderLayout.PAGE_START);
+        getContentPane().add(panelBack, java.awt.BorderLayout.PAGE_START);
 
         fioccoPanel1.setBackground(new java.awt.Color(0, 0, 102));
 
@@ -150,7 +176,7 @@ public class GeneratoreFiocco extends javax.swing.JFrame {
         fioccoPanel1.setLayout(fioccoPanel1Layout);
         fioccoPanel1Layout.setHorizontalGroup(
             fioccoPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 713, Short.MAX_VALUE)
+            .addGap(0, 731, Short.MAX_VALUE)
         );
         fioccoPanel1Layout.setVerticalGroup(
             fioccoPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -324,12 +350,11 @@ public class GeneratoreFiocco extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addPolygon;
     private javax.swing.JButton back;
+    private javax.swing.JPanel buttonsPanel;
     private FioccoPanel fioccoPanel1;
     private javax.swing.JButton generaFiocco;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel panelBack;
     private javax.swing.JButton removeLastPoint;
-    private javax.swing.JButton render;
     private javax.swing.JToggleButton renderTriangolo;
     private javax.swing.JButton resetPoints;
     private javax.swing.JButton saveAsPNG;

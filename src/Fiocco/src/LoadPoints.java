@@ -69,6 +69,7 @@ public class LoadPoints {
         } catch (IOException e) {
             System.out.println("Errore!! Il file non é nel formato corretto!!");
         }
+        
         return poligoni;
     }
 }

@@ -208,8 +208,8 @@ public class TriangoloPanel extends JPanel implements MouseListener {
                 }
                 
                 for (int i = 0; i < taglio.puntiPoligoni.size(); i++) {
-                    g.fillOval(taglio.puntiPoligoni.get(i).x - radius, taglio.puntiPoligoni.get(i).y - radius, radius * 2, radius * 2);
-                    g.fillPolygon(temp);
+                    g2.fillOval(taglio.puntiPoligoni.get(i).x - radius, taglio.puntiPoligoni.get(i).y - radius, radius * 2, radius * 2);
+                    g2.fillPolygon(temp);
                 }
             }
         }
