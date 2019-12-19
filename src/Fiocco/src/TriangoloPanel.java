@@ -56,7 +56,7 @@ public class TriangoloPanel extends JPanel implements MouseListener {
     /**
      * Classe che si occupa di salvare i punti de poligoni di taglio.
      */
-    private SavePoint salva = new SavePoint();
+    private SavePoints salva = new SavePoints();
 
     /**
      * Rappresenta il triangolo tagliato.

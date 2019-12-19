@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Salva i punti dei poligoni di taglio.
  * @author Daniel Matt
  */
-public class SavePoint {
+public class SavePoints {
 
     /**
      * Prepara la stringa da scrivere su un file

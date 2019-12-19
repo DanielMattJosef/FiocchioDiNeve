@@ -70,17 +70,11 @@
 ## Analisi
 
 ### Analisi del dominio
-
-  
-
+Il prodotto finale verrà utilizzato da utenti ai quali piace fare lavori manuali come creare fiocchi di neve con la carta. Quindi non avranno un'ampia conoscenza informatica e per questo l'applicativo deve essere user frendly.
 
 ### Analisi e specifica dei requisiti
-
+Per questo progetto ci sono stati dati questi requisiti da rispettare:<br>
 <a href="19_09_20_ListaRequisiti.md">Lista dei requisiti</a>
-  
-  
-
-
 
 **Spiegazione elementi tabella dei requisiti:**
 
@@ -104,111 +98,63 @@ vecchie dovranno essere inserite nei diari.
 
 ### Pianificazione
 
-Prima di stabilire una pianificazione bisogna avere almeno una vaga idea
-del modello di sviluppo che si intende adottare. In questa sezione
-bisognerà inserire il modello concettuale di sviluppo che si seguirà
-durante il progetto. Gli elementi di riferimento per una buona
-pianificazione derivano da una scomposizione top-down della problematica
-del progetto.
-
-La pianificazione può essere rappresentata mediante un diagramma di
-Gantt.
-
-Se si usano altri metodi di pianificazione (es scrum), dovranno apparire
-in questo capitolo.
+GAntt iniziale
+Gantt finale
 
 ### Analisi dei mezzi
 
-Elencare e *descrivere* i mezzi disponibili per la realizzazione del
-progetto. Ricordarsi di sempre descrivere nel dettaglio le versioni e il
-modello di riferimento.
+<ul>
+  <li>Sistema Operativo usato: Windows 10 Home</li>
+  <li>Software Gantt: Project Libre</li>
+  <li>Ambiente di sviluppo: NetBeans 11.1</li>
+  <li>Linguaggio usato per la documentazione per Documentazione: MarkDown</li>
+  <li>Linguaggio prorammazione: Java 13.0</li>
+  <li>Librerie Java: Batik 2.0</li>
+  <li>Hosting: Infomaniak</li>
+  <li>Html,Css,Javascript</li>
+</ul>
 
-SDK, librerie, tools utilizzati per la realizzazione del progetto e
-eventuali dipendenze.
-
-Su quale piattaforma dovrà essere eseguito il prodotto? Che hardware
-particolare è coinvolto nel progetto? Che particolarità e limitazioni
-presenta? Che hw sarà disponibile durante lo sviluppo?
+L'applicazione verrà implementata su un ASUS X556UAM, ma potra essere utilizata su tutti i sistemi operativi.
 
 ## Progettazione
 
-L'applicativo all'apertura si aprira con una finestra che chiede se si vuole creare o caricare un fiocco utilizzando 2 pulsanti.
-Se si preme <b>Crea</b> si aprira la finestra con il triangolo che ha la possibilita di "mettere" i punti che formerando il/i poligono/i per tagliare questo triangolo che con il pulsante <b>Genera</b> viene spechciato e poi ruotato fino a formare il fiocco di neve. Nella finenstra di creazione del fiocco, quello con il triangolo, si potrà Cambiare colore del triangolo e del fiocco. Inoltre si possono cancellare tutti i poligoni di taglio creati o cancellare solo l'ultimo punto dell'ultimo poligono. Ci sara poi anche un pulsante che salva i punti dei poligoni di taglio su un file csv nel seguente formato: x,y e quando finisce un poligono verra stapato un . su una riga.
-Inoltre ci sarà la possibilità di salvare il fiocco di neve come immagine Vettoriale(.svg) o Raster(.jpeg).
-Se, invece, si vuole aprire un fiocco di neve gia esistente si dovrà premere il pulsante <b>Apri</b> che aprirà una finestra di dialogo che permettera di aprire file csv con i punti di poligoni di taglio.
-
-Dopo la programmazione dell'applicativo si dovrà costruire un sito internet per esso dove lo si potra scaricare e scaricare e saranno a disposizione dei fiocchi prefatti in file csv.
-Il sito avra un tema giustamente invernale, ci sara una glleria di immagini dei fiocchi di neve.
+L'applicativo si aprira con un <a href="../imgs/">menú</a>
 
 ### Design dell’architettura del sistema
 
-Descrive:
-
--   La struttura del programma/sistema lo schema di rete...
-
--   Gli oggetti/moduli/componenti che lo compongono.
-
--   I flussi di informazione in ingresso ed in uscita e le
-    relative elaborazioni. Può utilizzare *diagrammi di flusso dei
-    dati* (DFD).
-
--   Eventuale sitemap
+UML FARE DOMANI
 
 ### Design dei dati e database
 
-Descrizione delle strutture di dati utilizzate dal programma in base
-agli attributi e le relazioni degli oggetti in uso.
-
-### Schema E-R, schema logico e descrizione.
-
-Se il diagramma E-R viene modificato, sulla doc dovrà apparire l’ultima
-versione, mentre le vecchie saranno sui diari.
+Il progetto da la possibilita di salvare i fiocchi di neve su files ".csv" con il seguente formato
 
 ### Design delle interfacce
 
-Descrizione delle interfacce interne ed esterne del sistema e
-dell’interfaccia utente. La progettazione delle interfacce è basata
-sulle informazioni ricavate durante la fase di analisi e realizzata
-tramite mockups.
+<ul>
+  <li><a href="../imgs/Gui.JPG">GUI</a></li>
+  <li><a href="../imgs/Triangolo.JPG">Triangolo</a></li>
+  <li><a href="../imgs/FioccoGenerato.JPG">Fiocco Generato</a></li>
+  <li><a href="../imgs/ApriEScegliFile.JPG">Salva e Apri fiocchi</a></li>
+</ul>
 
 ### Design procedurale
 
-Descrive i concetti dettagliati dell’architettura/sviluppo utilizzando
-ad esempio:
-
--   Diagrammi di flusso e Nassi.
-
--   Tabelle.
-
--   Classi e metodi.
-
--   Tabelle di routing
-
--   Diritti di accesso a condivisioni …
-
-Questi documenti permetteranno di rappresentare i dettagli procedurali
-per la realizzazione del prodotto.
+javadoc
 
 ## Implementazione
 
-In questo capitolo dovrà essere mostrato come è stato realizzato il
-lavoro. Questa parte può differenziarsi dalla progettazione in quanto il
-risultato ottenuto non per forza può essere come era stato progettato.
-
-Sulla base di queste informazioni il lavoro svolto dovrà essere
-riproducibile.
-
-In questa parte è richiesto l’inserimento di codice sorgente/print
-screen di maschere solamente per quei passaggi particolarmente
-significativi e/o critici.
-
-Inoltre dovranno essere descritte eventuali varianti di soluzione o
-scelte di prodotti con motivazione delle scelte.
-
-Non deve apparire nessuna forma di guida d’uso di librerie o di
-componenti utilizzati. Eventualmente questa va allegata.
-
-Per eventuali dettagli si possono inserire riferimenti ai diari.
+## Definizione Classi
+<ul>
+  <li><b>GUI</b>: questa classe rappresena un frame iniziale che offre la possibilita di aprire o di creare un nuovo fiocco di neve tramite 2 pulsanti. Se si preme il primo, aprire, si aprirà una finestra di dialogo che permetterà di aprire file di tipo csv o xls. Mentre se si preme il secondo si aprirà il frame della classe GeneratoreFiocco</li>
+  <li><b>GeneratoreFiocco</b>: questa classe é un frame che contiene 2 pannelli: uno che rappresenta il triangolo da tagliare (TriangoloPanel) e un'altro che, invece, rappresenta il fiocco (FioccoPanel) di neve generato. Sotto questi 2 pannelli ci sarà un menú di pulsanti utili alla realizzazione del fiocco.</li>
+  <li><b>TriangoloPanel</b>: questa classe si occupa di disegnare un oggetto Triangolo e a ogni click del mouse aggiungere un punto a un oggetto PoligonoTaglio.</li>
+  <li><b>Triangolo</b>: rappresenta un modello di triangolo con dimensioni pari al 50% rispetto all'area della finestra che lo contiene.</li>
+  <li><b>PoligonoTaglio</b>: rappresenta un modello di poligono di taglio. Si occupa di ridimensionare tutti i punti di tutti i poligoni di taglio ogni volta che il panel viene ridimensionato</li>
+  <li><b>TriangoloTagliato</b>: si occupa di sottrarre le aree dei poligoni di taglio all'area del trioangolo di base.</li>
+  <li><b>SavePoints</b>: si occupa di salvare tutti i punti dei poligoni di taglio su un file CSV nel seguente formato:<br>x,y<br>x,y<br>x,y<br>. (Per indicare che é finito un poligono)</li>
+  <li><b>LoadPoints</b>: si occupa di caricare nell'applicativo un file con il fiocco di neve già esistente. Se il file non rispetta le convenzioni stabilite aprirà il frame GeneratoreFiocco senza aprire nessun fiocco.</li>
+  <li><b>FioccoPanel</b>: é un pannello che disegna il fiocco di neve generato al centro del pannello.<li>
+</ul>
 
 ## Test
 
