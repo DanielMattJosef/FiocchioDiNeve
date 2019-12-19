@@ -186,7 +186,7 @@ public class TriangoloPanel extends JPanel implements MouseListener {
                 }
             }
 
-            g.setColor(Color.YELLOW);
+            g.setColor(Color.BLACK);
             for (int i = 0; i < taglio.poligoni.size(); i++) {
                 for(int j = 0; j < taglio.poligoni.get(i).npoints;j++){
                     g2.fillPolygon(taglio.poligoni.get(i));

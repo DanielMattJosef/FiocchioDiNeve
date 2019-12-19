@@ -1,4 +1,5 @@
 
+import java.io.FileFilter;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
@@ -90,7 +91,10 @@ public class GUI extends javax.swing.JFrame {
     private void ApriFioccoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ApriFioccoActionPerformed
         JFileChooser jfc = new JFileChooser();
         FileNameExtensionFilter fnf = new FileNameExtensionFilter("Csv File (*.csv)", "csv");
+        FileNameExtensionFilter xlsFilter = new FileNameExtensionFilter("Xls File (*.xls)", "xls");
         jfc.setFileFilter(fnf);
+        jfc.addChoosableFileFilter(xlsFilter);
+        jfc.setAcceptAllFileFilterUsed(false);
         jfc.showDialog(null, "Open");
         try{
             String handle = new String(jfc.getSelectedFile().toPath().toString());

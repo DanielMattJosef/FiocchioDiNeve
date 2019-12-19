@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  * Legge un file csv e ne trae informazioni per costruire i poligoni di taglio.
@@ -68,7 +69,14 @@ public class LoadPoints {
 
         } catch (IOException e) {
             System.out.println("Errore!! Il file non é nel formato corretto!!");
+        } catch (NumberFormatException f){
+             JOptionPane error = new JOptionPane();
+            error.showOptionDialog(null,"Impossibile aprire il file!!","Errore nell'apertura del file",
+                    JOptionPane.DEFAULT_OPTION,
+                    JOptionPane.ERROR_MESSAGE,
+                    null, null, null);
         }
+        
         
         return poligoni;
     }

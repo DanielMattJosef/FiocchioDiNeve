@@ -170,7 +170,7 @@ public class GeneratoreFiocco extends javax.swing.JFrame {
 
         getContentPane().add(panelBack, java.awt.BorderLayout.PAGE_START);
 
-        fioccoPanel1.setBackground(new java.awt.Color(0, 0, 102));
+        fioccoPanel1.setBackground(new java.awt.Color(0, 102, 204));
 
         javax.swing.GroupLayout fioccoPanel1Layout = new javax.swing.GroupLayout(fioccoPanel1);
         fioccoPanel1.setLayout(fioccoPanel1Layout);
@@ -184,6 +184,8 @@ public class GeneratoreFiocco extends javax.swing.JFrame {
         );
 
         getContentPane().add(fioccoPanel1, java.awt.BorderLayout.CENTER);
+
+        triangoloPanel.setBackground(new java.awt.Color(0, 102, 204));
 
         javax.swing.GroupLayout triangoloPanelLayout = new javax.swing.GroupLayout(triangoloPanel);
         triangoloPanel.setLayout(triangoloPanelLayout);
