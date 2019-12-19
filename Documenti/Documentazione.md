@@ -118,7 +118,7 @@ L'applicazione verrà implementata su un ASUS X556UAM, ma potra essere utilizata
 
 ## Progettazione
 
-L'applicativo si aprira con un <a href="../imgs/">menú</a>
+L'applicativo si aprira con un <a href="../imgs/GUI.JPG">menú</a>
 
 ### Design dell’architettura del sistema
 
