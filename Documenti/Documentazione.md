@@ -118,7 +118,7 @@ L'applicazione verrà implementata su un ASUS X556UAM, ma potra essere utilizata
 
 ## Progettazione
 
-L'applicativo si aprira con un <a href="../imgs/GUI.JPG">menú</a>
+L'applicativo si aprira con un <a href="../imgs/GUI.JPG">menú</a> che offre la scelta di <a href="../imgs/ApriEScegliFile.JPG">aprire</a> un fiocco gia esistente per poi caricarlo nel pannello con il <a href="../imgs/Triangolo.JPG">triangolo</a> dove si potrà aggiungere altri poligoni di taglio e poi <a href="../imgs/FioccoGenerato.JPG">generare</a> il fiocco.
 
 ### Design dell’architettura del sistema
 
