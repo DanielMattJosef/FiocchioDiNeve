@@ -74,9 +74,9 @@ Il prodotto finale verrà utilizzato da utenti ai quali piace fare lavori manual
 
 ### Analisi e specifica dei requisiti
 Per questo progetto ci sono stati dati questi requisiti da rispettare:<br>
-|ID         |Requisito          |Categoria      |Priorità | Versione|
+|ID         |Requisito          |Categoria      |Priorità | Versione|<br>
 |-----------|-------------------|---------------|---------|---------|
-|001|Applicativo in Java|Linguaggio     |1        |1        |
+|001|Applicativo in Java|Linguaggio|1        |1        |
 |002|Sito del progetto|Presentazione/Descrizione progetto|4|1|
 |003|Il sito non deve avere colori fastidosi|struttura sito|6|1|
 |004|Il sito deve contenere una piccola guida di utilizzo con degli screenshots, i requisiti del sistema, la JRE|struttura sito|6|1|
