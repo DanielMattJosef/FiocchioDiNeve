@@ -74,7 +74,28 @@ Il prodotto finale verrà utilizzato da utenti ai quali piace fare lavori manual
 
 ### Analisi e specifica dei requisiti
 Per questo progetto ci sono stati dati questi requisiti da rispettare:<br>
-<a href="19_09_20_ListaRequisiti.md">Lista dei requisiti</a>
+|ID         |Requisito          |Categoria      |Priorità | Versione|
+|-----------|-------------------|---------------|---------|---------|
+|001|Applicativo in Java|Linguaggio     |1        |1        |
+|002|Sito del progetto|Presentazione/Descrizione progetto|4|1|
+|003|Il sito non deve avere colori fastidosi|struttura sito|6|1|
+|004|Il sito deve contenere una piccola guida di utilizzo con degli screenshots, i requisiti del sistema, la JRE|struttura sito|6|1|
+|005|Implementare interfaccia grafica| programmazione |1|1|
+|006|Finestra all'avvio dimensioni minime di 1024x768|layout applicazione|4|1|
+|007|Area di lavoro é un triangolo. dimensioni 50% rispetto alla finestra|area lavoro|1|1|
+|008|Il triangolo deve essere sempre centrato.|layout applicazione|3|1|
+|009|Triangolo é ridimensionabile.|layout applicazione|4|1|
+|010|Tagli del triangolo con il mouse Left Button| Logica applicativo |1|1|
+|011|I punti di taglio possono avere la forma di uno o piú poligoni.|logica applicativo|1|1|
+|012|I punti del triangolo si possono resettare.|Logica applicativo|4|1|
+|013|I punti di taglio possono essere spostati o rimossi.|Logica applicativo|7|1|
+|014|Il/I poligono/i di taglio devono poter essere salvati o in file o DB. (Consigliato in JSON, CSV o serializzazione oggetto). con anche una miniatura|logica applicativo|6|1|
+|015|Tasto di generazione del fiocco di neve prodotto che mostra un'anteprima.|Logica applicativo|1|1|
+|016|Generazione in tempo reale sin dal l'inizio oppure quando vuole l'utente|logica applicativo|4|1|
+|017|Possibilità di salvare il fiocco di neve in PNG o SVG (scelta dell'utente).|logica applicativo|4|1|
+|018|Salvare il fiocco di neve con dimensioni correnti (finestra applicativo) o 500 o 1000.|logica applicativo|4|1|
+|019|Il percorso di salvataggio puo essere di default ma meglio se lo sceglie l'utente.|logica applicativo|4|1|
+|020|Consegna .jar sul sito e il .class su github.|logica applicativo|6|1|
 
 **Spiegazione elementi tabella dei requisiti:**
 
@@ -96,14 +117,19 @@ requisito avrà una versione aggiornata.
 Sulla documentazione apparirà solamente l’ultima versione, mentre le
 vecchie dovranno essere inserite nei diari.
 
+### Use Case
+L'utente apre il programma e puo scegliere se aprire un fiocco di neve o di crearne uno nuovo. Quando carica un fiocco gia esistente, questo verrà caricato sulla finestra di generazione fiocco.
+
 ### Pianificazione
 
-GAntt iniziale
-Gantt finale
+
+![Gantt iniziale](../GANTT_Progetto/FioccoDiNeve.pdf)
+<a href="../GANTT_Progetto/GanttConsuntivo_ProgettoFioccoDiNeve.pdf">Gantt consuntivo</a>
 
 ### Analisi dei mezzi
 
 <ul>
+  <li>Hardware: ASUS X556UAM</li>
   <li>Sistema Operativo usato: Windows 10 Home</li>
   <li>Software Gantt: Project Libre</li>
   <li>Ambiente di sviluppo: NetBeans 11.1</li>
@@ -113,8 +139,6 @@ Gantt finale
   <li>Hosting: Infomaniak</li>
   <li>Html,Css,Javascript</li>
 </ul>
-
-L'applicazione verrà implementata su un ASUS X556UAM, ma potra essere utilizata su tutti i sistemi operativi.
 
 ## Progettazione
 
@@ -126,7 +150,7 @@ UML FARE DOMANI
 
 ### Design dei dati e database
 
-Il progetto da la possibilita di salvare i fiocchi di neve su files ".csv" con il seguente formato
+Il progetto da la possibilita di salvare i fiocchi di neve su files ".csv". Su sito del progetto sono a dispoizione alcuni fiocchi di neve già generati.
 
 ### Design delle interfacce
 
@@ -186,16 +210,11 @@ l’errore con eventuali ipotesi di correzione.
 
 ### Mancanze/limitazioni conosciute
 
-Descrizione con motivazione di eventuali elementi mancanti o non
-completamente implementati, al di fuori dei test case. Non devono essere
-riportati gli errori e i problemi riscontrati e poi risolti durante il
-progetto.
+L'applicativo non presenta una live fluida come richiesto ma per aggiornare il fiocco bisogna aggiungere il poligono di taglio con il pulsante <b>Add Polygon</b>. Inoltre la generazione dell'immagine raster del fiocco avviene con dimensioni già definite dal programma e non si puó cambiare.
 
 ## Consuntivo
 
-Consuntivo del tempo di lavoro effettivo e considerazioni riguardo le
-differenze rispetto alla pianificazione (cap 1.7) (ad esempio Gannt
-consuntivo).
+Non ho rispettato la pianificazione iniziale e mi sono ritrovato a fare tante cose le ultime settimane di lavoro
 
 ## Conclusioni
 
@@ -206,10 +225,10 @@ stato una perdita di tempo? I risultati ottenuti sono generali,
 facilmente generalizzabili o sono specifici di un caso particolare? ecc
 
 ### Sviluppi futuri
-  Migliorie o estensioni che possono essere sviluppate sul prodotto.
+  In futuro si puó implemetare la possibilità di passare le dimensioni dell'immagine raster con per esempio un label. Poi si puó modificare la live e renderla piú fluida.
 
 ### Considerazioni personali
-  Cosa ho imparato in questo progetto? ecc
+  Da questo progetto ho imparato che la documentazione essendo una parte fondamentale di un progetto la si bisogna fare man mano che il progetto va avanti e non come ho fatto io che mi sono ritrovato a fare tutto nelle ultime settimane.
 
 ## Bibliografia
 
