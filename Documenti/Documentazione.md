@@ -177,7 +177,7 @@ Fiocco:
 </ul>
 
 ## Generazione Fiocco
-![Codice Fiocco](/Implentazione/GeneraFiocco.PNG)
+![Codice Fiocco](Implentazione/GeneraFiocco.PNG)
 
 ## Test
 
