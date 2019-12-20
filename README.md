@@ -20,8 +20,8 @@ ___
 ___
 
 ## Documenti del progetto
-<a href="Documenti/Documentazione.md">Documentazione</a><br>
-<a href="Documenti/19_09_20_ListaRequisitimd.md">Lista dei Requisiti</a><br>
-<a href="Documenti/Mandato.pdf">Mandato</a><br>
-<a href="../Source/">Codici</a><br>
-<a href="../Dist/GeneratoreFiocchiDiNeve.zip">Applicativo</a><br>
+- [Specifica](Documenti/Mandato.pdf)
+- [Requisiti](Documenti/19_09_20_ListaRequisitimd.md)
+- [Documentazione](Documenti/Documentazione.md)
+- [Src](Source/)
+- [Programma](Dist/)
