@@ -47,7 +47,6 @@
 
 
 ## Introduzione
-
 ### Informazioni sul progetto
 
   Questo progetto é stato affidato dai professori Luca Muggiasca e Geo Petrini della SAMT (Scuola d'Arti e Mestieri di Trevano) alle classi I3AA e I3AC, nel quale sono presente pure io Daniel Josef Matt.
