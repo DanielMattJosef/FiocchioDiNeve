@@ -78,7 +78,7 @@ Per questo progetto ci sono stati dati questi requisiti da rispettare:<br>
 |ID         |Requisito          |Categoria      |Priorità | Versione|
 |-----------|-------------------|---------------|---------|---------|
 |001|Applicativo in Java|Linguaggio|1        |1        |
-|002|Sito del progetto|Presentazione/Descrizione progetto|4|1|
+|002|Sito del progetto con possibilità di scaricarlo|Presentazione/Descrizione progetto|4|1|
 |003|Il sito non deve avere colori fastidosi|struttura sito|6|1|
 |004|Il sito deve contenere una piccola guida di utilizzo con degli screenshots, i requisiti del sistema, la JRE|struttura sito|6|1|
 |005|Implementare interfaccia grafica| programmazione |1|1|
@@ -170,6 +170,9 @@ Fiocco:
 <br>
 Questa finestra contiene il fiocco generato e 2 pulsanti per salvarlo come immagine vettoriale (SVG) e come immagine raster (PNG).
 
+## Design finale
+Alla fine ho deciso per motivi di comodicita che avere solo un finestra aperta era piu comodo cosí ho inserito i pannelli del triangolo e del fiocco generato nello stesso Frame in modo da semplificare all'utente la vista del fiocco.
+
 ## Implementazione
 
 ## Definizione Classi
@@ -197,21 +200,117 @@ Per generare il fiocco vero e proprio la classe utilizza il metodo generaFiocco 
 
 |Test Case      | TC-001                               |
 |---------------|--------------------------------------|
-|**Nome**       | |
+|**Nome**       |Spostare e  |
 |**Riferimento**|REQ-012                               |
 |**Descrizione**|Import a card with KIC, KID and KIK keys with no obfuscation, but not shown with the GUI |
 |**Prerequisiti**|Store on local PC: Profile\_1.2.001.xml (appendix n\_n) and Cards\_1.2.001.txt (appendix n\_n) |
 |**Procedura**     | - Go to “Cards manager” menu, in main page click “Import Profiles” link, Select the “1.2.001.xml” file, Import the Profile - Go to “Cards manager” menu, in main page click “Import Cards” link, Select the “1.2.001.txt” file, Delete the cards, Select the “1.2.001.txt” file, Import the cards |
 |**Risultati attesi** |Keys visible in the DB (OtaCardKey) but not visible in the GUI (Card details) |
 
+|Test Case      | TC-001                               |
+|---------------|--------------------------------------|
+|**Nome**       |Download e prova programma |
+|**Riferimento**|REQ-002                               |
+|**Descrizione**|Scaricare dal sito l'applicativo e avviarlo|
+|**Prerequisiti**|Sito completo e programma funzionante|
+|**Procedura**     |Scaricare il programma del sito e testare il suo funzionamento|
+|**Risultati attesi** |Non ci dovrebbere essere errori durante l'esecuzione del programma|
+
+|Test Case      | TC-002                               |
+|---------------|--------------------------------------|
+|**Nome**       |Dimensioni minime e ridimensionamento |
+|**Riferimento**|REQ-006                              |
+|**Descrizione**|Provare a ridimensionare la pagina|
+|**Prerequisiti**|Avere impostato le dimensioni minime|
+|**Procedura**   |Eseguire il programma e ridimensionare la pagina al di sotto dei 1024x768|
+|**Risultati attesi** |La finestra non puo andare sotto ai 1024x768|
+
+|Test Case      | TC-003                               |
+|---------------|--------------------------------------|
+|**Nome**       |Taglio del triangolo (Aggiunta Punti)|
+|**Riferimento**|REQ-010                               |
+|**Descrizione**|Aggiungere i punti per generare i poligoni di taglio|
+|**Prerequisiti**|Avere il triangolo e avere la possibilita di aggiungere punti con il mouse|
+|**Procedura**     |Avviare il programma e con il mouse creare i poligoni cliccando sul pannello i punti|
+|**Risultati attesi** |Cliccando sul pannello si dovrebbero aggiungere i punti e sopra ai 3 si deve formare il poligono di taglio|
+
+|Test Case      | TC-004                               |
+|---------------|--------------------------------------|
+|**Nome**       |Reset dei punti |
+|**Riferimento**|REQ-012                               |
+|**Descrizione**|Testare il pulsante di reset dei punti|
+|**Prerequisiti**|Possibilita di aggiungere punti e avere il pulsante di reset|
+|**Procedura**     |Avviare il programma, aggiungere dei punti di taglio per poi rimuoverli con il tasto reset|
+|**Risultati attesi** |Quando si preme il pulsante i punti del poligono di taglio si devono cancellare|
+
+|Test Case      | TC-005                               |
+|---------------|--------------------------------------|
+|**Nome**       |Spostare i punti di taglio |
+|**Riferimento**|REQ-0013                               |
+|**Descrizione**|Spostare i punti di taglio|
+|**Prerequisiti**|Avere punti di taglio e la possibilità di spostarli|
+|**Procedura**     |Avviare il programma, aggiungere punti e poi spostarli con il mouse|
+|**Risultati attesi** |I punti si devono spostare|
+
+|Test Case      | TC-006                               |
+|---------------|--------------------------------------|
+|**Nome**       |Rimuovere i punti di taglio |
+|**Riferimento**|REQ-0013                               |
+|**Descrizione**|Rimuovere i punti di taglio|
+|**Prerequisiti**|Avere punti di taglio e la possibilità di rimuoverli|
+|**Procedura**     |Avviare il programma, aggiungere punti e poi rimuoverli con il mouse|
+|**Risultati attesi** |I punti si devono rimuovere|
+
+|Test Case      | TC-007                               |
+|---------------|--------------------------------------|
+|**Nome**       |Salvateggio dei poligoni di taglio su un file |
+|**Riferimento**|REQ-0014                               |
+|**Descrizione**|Salvare i poligoni di taglio su un file|
+|**Prerequisiti**|Avere poligoni di taglio e possibilità di salvarli in file|
+|**Procedura**     |Avviare il programma, aggiungere punti e poi salvarli su un file|
+|**Risultati attesi** |Le coordinate dei punti devono essere state scritte sul file|
+
+|Test Case      | TC-008                               |
+|---------------|--------------------------------------|
+|**Nome**       |Generazione fiocco |
+|**Riferimento**|REQ-0015                               |
+|**Descrizione**|Generare il fiocco di neve|
+|**Prerequisiti**|Triangolo tagliato|
+|**Procedura**     |Avviare il programma, aggiungere punti, tagliare il triangoli con i poligoni di taglio e poi generare il fiocco di neve con esso|
+|**Risultati attesi** |Fiocco generato con il triangolo tagliato|
+
+|Test Case      | TC-009                               |
+|---------------|--------------------------------------|
+|**Nome**       |Generazione Live|
+|**Riferimento**|REQ-0016                               |
+|**Descrizione**|Generazione live del fiocco|
+|**Prerequisiti**|Triangolo tagliato e fiocco generabile|
+|**Procedura**   |Avviare il programma, aggiungere punti, tagliare il triangoli con i poligoni di taglio e poi generare il fiocco di neve con esso|
+|**Risultati attesi** |Fiocco generato in live con il triangolo tagliato|
+
+|Test Case      | TC-010                               |
+|---------------|--------------------------------------|
+|**Nome**       |Salvataggio Img fiocco|
+|**Riferimento**|REQ-0017                               |
+|**Descrizione**|Salvare fiocco in PNG e SVG|
+|**Prerequisiti**|Fiocco generato e possibilità di generare svg e png|
+|**Procedura**   |Generare un fiocco e salvarlo in png e svg|
+|**Risultati attesi** |Il fiocco generato deve essere salvato come immagine svg e png|
 
 ### Risultati test
 
-Tabella riassuntiva in cui si inseriscono i test riusciti e non del
-prodotto finale. Se un test non riesce e viene corretto l’errore, questo
-dovrà risultare nel documento finale come riuscito (la procedura della
-correzione apparirà nel diario), altrimenti dovrà essere descritto
-l’errore con eventuali ipotesi di correzione.
+|Test|Risultato|
+|----|---------|
+|TC-001|Successo|
+|TC-002|Successo|
+|TC-003|Successo|
+|TC-004|Successo|
+|TC-005|Fallito|
+|TC-006|Successo|
+|TC-007|Successo|
+|TC-008|Successo|
+|TC-009|SemiRiuscito|
+|TC-010|Successo|
 
 ### Mancanze/limitazioni conosciute
 
@@ -240,36 +339,11 @@ facilmente generalizzabili o sono specifici di un caso particolare? ecc
 ## Bibliografia
 
 ### Sitografia
-
-1.  URL del sito (se troppo lungo solo dominio, evt completo nel
-    diario),
-
-2.  Eventuale titolo della pagina (in italico),
-
-3.  Data di consultazione (GG-MM-AAAA).
-
-**Esempio:**
-
--   http://standards.ieee.org/guides/style/section7.html, *IEEE
-    Standards Style Manual*, 07-06-2008.
-
-## Allegati
-
-Elenco degli allegati, esempio:
-
--   Diari di lavoro
-
--   Codici sorgente/documentazione macchine virtuali
-
--   Istruzioni di installazione del prodotto (con credenziali
-    di accesso) e/o di eventuali prodotti terzi
-
--   Documentazione di prodotti di terzi
-
--   Eventuali guide utente / Manuali di utilizzo
-
--   Mandato e/o Qdc
-
--   Prodotto
-
--   …
+https://xmlgraphics.apache.org/batik/using/svg-generator.html, Apache sito librerie per Netbeans, 20.12.2019<br>
+https://www.mkyong.com/java/how-to-read-and-parse-csv-file-in-java/, <br>
+Spiegazione comen scrivere e leggere un fil csv in javv, 20.12.2019<br>
+https://getbootstrap.com/docs/4.4/getting-started/download/, BootStrap codice sorgente css, 20.12.2019<br>
+https://www.w3schools.com/, W3School Web Tutorial,20.12.2019<br>
+https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html, Versione 13 di java, 20.12.2019<br>
+http://plugins.netbeans.org/plugin/55435/easyuml, Plugin NetBeans, 20.12.2019<br>
+https://app.creately.com/diagram/create, Editore Use Case Online,20.12.2019<br>
