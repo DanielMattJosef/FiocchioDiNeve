@@ -1,5 +1,4 @@
 
-import java.io.FileFilter;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
 

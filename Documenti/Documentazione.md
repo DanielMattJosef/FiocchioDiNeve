@@ -118,13 +118,13 @@ Sulla documentazione apparirà solamente l’ultima versione, mentre le
 vecchie dovranno essere inserite nei diari.
 
 ### Use Case
-L'utente apre il programma e puo scegliere se aprire un fiocco di neve o di crearne uno nuovo. Quando carica un fiocco gia esistente, questo verrà caricato sulla finestra di generazione fiocco.
+![Use Case](UseCase/UseCaseFiocco.png)
 
 ### Pianificazione
-
-
-//![Gantt iniziale](GANTT_Progetto/FioccoDiNeve.pdf)
-<a href="../GANTT_Progetto/GanttConsuntivo_ProgettoFioccoDiNeve.pdf">Gantt consuntivo</a>
+Gantt Preventivo:
+![GanttPreventivo](GANTT_Progetto/Gantt_Preventivo.png)
+Gantt Consuntivo:
+![GanttConsuntivo](GANTT_Progetto/Gantt_Consuntivo.png)
 
 ### Analisi dei mezzi
 
@@ -153,17 +153,8 @@ L'applicativo si aprira con un <a href="../imgs/GUI.JPG">menú</a> che offre la 
 Il progetto da la possibilita di salvare i fiocchi di neve su files ".csv". Su sito del progetto sono a dispoizione alcuni fiocchi di neve già generati.
 
 ### Design delle interfacce
+![DesignGui](../imgs/GUI.JPG)
 
-<ul>
-  <li><a href="../imgs/Gui.JPG">GUI</a></li>
-  <li><a href="../imgs/Triangolo.JPG">Triangolo</a></li>
-  <li><a href="../imgs/FioccoGenerato.JPG">Fiocco Generato</a></li>
-  <li><a href="../imgs/ApriEScegliFile.JPG">Salva e Apri fiocchi</a></li>
-</ul>
-
-### Design procedurale
-
-javadoc
 
 ## Implementazione
 

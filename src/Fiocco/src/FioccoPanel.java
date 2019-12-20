@@ -66,7 +66,7 @@ public class FioccoPanel extends JPanel {
 
     /**
      * Setta un nuovo fiocco.
-     * @param fiocco 
+     * @param fiocco lista con aree del fiocco.
      */
     public void setFiocco(ArrayList<Shape> fiocco) {
         this.fiocco = fiocco;
@@ -74,8 +74,8 @@ public class FioccoPanel extends JPanel {
 
     /**
      * Si occupe di centrare il fiocco all'interno del panel.
-     * @param triangle
-     * @return 
+     * @param triangle area del triangolo da centrare.
+     * @return una shape modificata
      */
     public Shape toCenter(Shape triangle) {
         centro = triangolo.getApiceTriangolo();
@@ -90,7 +90,6 @@ public class FioccoPanel extends JPanel {
         tot.concatenate(toOrigin);
         tot.concatenate(dim);
         tot.concatenate(toCenter);
-
         return tot.createTransformedShape(triangle);
     }
 
@@ -110,7 +109,7 @@ public class FioccoPanel extends JPanel {
     
     /**
      * Si occupe di salvare un immagine vettoriale del fiocco creato.
-     * @param filename percorso del file creato (in stringa).
+     * @param path percorso del file SVG creato.
      */
     public void generaSVG(String path){
         DOMImplementation domImpl = GenericDOMImplementation.getDOMImplementation();
@@ -137,7 +136,10 @@ public class FioccoPanel extends JPanel {
     
     
     
-    
+    /**
+     * Genera un immagine raster di dimensioni 1024x768 del fiocco di neve.
+     * @param path percorso del file PNG creato.
+     */
     public void generaPNG(String path){
         try{
             BufferedImage buffImg = new BufferedImage

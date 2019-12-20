@@ -24,7 +24,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 public class TriangoloPanel extends JPanel implements MouseListener {
 
     /**
-     *
+     * Poligono di taglio generato.
      */
     private Polygon poligono;
 
@@ -90,10 +90,10 @@ public class TriangoloPanel extends JPanel implements MouseListener {
     /**
      * Setta un nuovo colore per il triangolo.
      *
-     * @param triangolo
+     * @param coloreTriangolo nuovo colore del triangolo di base. 
      */
-    public void setColor(Color triangolo) {
-        this.colorTriangolo = triangolo;
+    public void setColor(Color coloreTriangolo) {
+        this.colorTriangolo = coloreTriangolo;
     }
 
     /**
