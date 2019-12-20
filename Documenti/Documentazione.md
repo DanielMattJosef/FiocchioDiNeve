@@ -123,7 +123,8 @@ vecchie dovranno essere inserite nei diari.
 
 ### Pianificazione
 Gantt Preventivo:<br>
-![GanttPreventivo](GANTT_Progetto/Gantt_Preventivo.png)
+
+![Gantt Preventivo](GANTT_Progetto/Gantt_Preventivo.PNG)
 
 ### Analisi dei mezzi
 
