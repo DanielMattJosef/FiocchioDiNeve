@@ -44,7 +44,6 @@
 
 1. [Sitografia](#sitografia)
 
-1. [Allegati](#allegati)
 
 
 ## Introduzione
