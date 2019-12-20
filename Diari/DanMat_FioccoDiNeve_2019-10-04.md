@@ -10,7 +10,7 @@
 |14:01 - 15:30   |Progettato sito web           |
 |15:30 - 16:00   |Creato file html per sito (messo base con titoli e paragrafi con commento su cosa metterci in futuro)|
 |16:01 - 16:30   |Continuata Documentazione e fatto diario di oggi|
-|
+
 
 
 
