@@ -321,7 +321,6 @@ public class TriangoloPanel extends JPanel implements MouseListener {
 
         return tot.createTransformedShape(fiocco);
     }
-
     /**
      * Si occupa di ruotare un area in base a un angolo dato.
      *
@@ -334,7 +333,6 @@ public class TriangoloPanel extends JPanel implements MouseListener {
         rotate.rotate(Math.toRadians(angolo), triangolo.getApiceTriangolo().x, triangolo.getApiceTriangolo().y);
         return rotate.createTransformedShape(fiocco);
     }
-
     /**
      * Genera il fiocco.
      *
