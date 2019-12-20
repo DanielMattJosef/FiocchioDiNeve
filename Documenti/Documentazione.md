@@ -173,11 +173,11 @@ Fiocco:
   <li><b>TriangoloTagliato</b>: si occupa di sottrarre le aree dei poligoni di taglio all'area del trioangolo di base.</li>
   <li><b>SavePoints</b>: si occupa di salvare tutti i punti dei poligoni di taglio su un file CSV nel seguente formato:<br>x,y<br>x,y<br>x,y<br>. (Per indicare che é finito un poligono)</li>
   <li><b>LoadPoints</b>: si occupa di caricare nell'applicativo un file con il fiocco di neve già esistente. Se il file non rispetta le convenzioni stabilite aprirà il frame GeneratoreFiocco senza aprire nessun fiocco.</li>
-  <li><b>FioccoPanel</b>: é un pannello che disegna il fiocco di neve generato al centro del pannello.<li>
+  <li><b>FioccoPanel</b>: é un pannello che disegna il fiocco di neve generato al centro del pannello.</li>
 </ul>
 
 ## Generazione Fiocco
-
+![Codice Fiocco](/Implentazione/GeneraFiocco.PNG)
 
 ## Test
 
