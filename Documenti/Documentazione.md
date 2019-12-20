@@ -190,6 +190,7 @@ Alla fine ho deciso per motivi di comodicita che avere solo un finestra aperta e
 
 ## Generazione Fiocco
 ![Codice Fiocco](Implementazione/GeneraFiocco.PNG)<br>
+
 Il fiocco di neve viene generato specchiango il triangolo tagliato con il metodo mirrorTriangle e poi con il metodo rotate viene ruotato in base ad un angolo passato.
 
 Per generare il fiocco vero e proprio la classe utilizza il metodo generaFiocco che fa girare 6 volte il triangolo tagliato. A ogni cicle viengono create due aree una specchiata e ruotata di un angolo multiplo di 6 e la seconda solamente ruotata sempre per lo stesso angolo dell'area precedente. 
@@ -197,15 +198,6 @@ Per generare il fiocco vero e proprio la classe utilizza il metodo generaFiocco 
 ## Test
 
 ### Protocollo di test
-
-|Test Case      | TC-001                               |
-|---------------|--------------------------------------|
-|**Nome**       |Spostare e  |
-|**Riferimento**|REQ-012                               |
-|**Descrizione**|Import a card with KIC, KID and KIK keys with no obfuscation, but not shown with the GUI |
-|**Prerequisiti**|Store on local PC: Profile\_1.2.001.xml (appendix n\_n) and Cards\_1.2.001.txt (appendix n\_n) |
-|**Procedura**     | - Go to “Cards manager” menu, in main page click “Import Profiles” link, Select the “1.2.001.xml” file, Import the Profile - Go to “Cards manager” menu, in main page click “Import Cards” link, Select the “1.2.001.txt” file, Delete the cards, Select the “1.2.001.txt” file, Import the cards |
-|**Risultati attesi** |Keys visible in the DB (OtaCardKey) but not visible in the GUI (Card details) |
 
 |Test Case      | TC-001                               |
 |---------------|--------------------------------------|
@@ -319,6 +311,7 @@ L'applicativo non presenta una live fluida come richiesto ma per aggiornare il f
 ## Consuntivo
 
 Gantt Consuntivo:<br>
+
 ![GanttConsuntivo](GANTT_Progetto/Gantt_Consuntivo.png)
 
 
