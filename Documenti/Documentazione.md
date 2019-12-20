@@ -44,7 +44,6 @@
 
 1. [Sitografia](#sitografia)
 
-1. [Allegati](#allegati)
 
 
 ## Introduzione
@@ -312,7 +311,7 @@ L'applicativo non presenta una live fluida come richiesto ma per aggiornare il f
 
 Gantt Consuntivo:<br>
 
-![GanttConsuntivo](GANTT_Progetto/Gantt_Consuntivo.png)
+![Gantt Consuntivo](GANTT_Progetto/Gantt_Consuntivo.PNG)
 
 
 ## Conclusioni
