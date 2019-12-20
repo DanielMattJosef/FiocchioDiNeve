@@ -146,7 +146,7 @@ L'applicativo si aprira con un <a href="../imgs/GUI.JPG">menú</a> che offre la 
 
 ### Design dell’architettura del sistema
 
-UML FARE DOMANI
+![UML Progetto](../UML/UML_FioccoDiNeve.png)
 
 ### Design dei dati e database
 
