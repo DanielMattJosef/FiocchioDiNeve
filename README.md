@@ -1,12 +1,2 @@
 # Modulo 306
-
-## Fiocco di neve
-
-### Diari
-- [Diario]()
-
-### Documentazione
-
-
-
-### Link utili
+Progetto di primo semestre del 3° anno di informatica alla Scuola d'Arti e Mestieri di Trevano.
