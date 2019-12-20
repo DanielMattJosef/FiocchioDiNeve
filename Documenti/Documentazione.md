@@ -151,13 +151,22 @@ L'applicativo si aprira con un <a href="../imgs/GUI.JPG">menú</a> che offre la 
 Il progetto da la possibilita di salvare i fiocchi di neve su files ".csv". Su sito del progetto sono a dispoizione alcuni fiocchi di neve già generati.
 
 ### Design delle interfacce
-Gui:
-![DesignGui](../imgs/GUI.JPG)
-Triangolo:
-![Triangolo](../imgs/Triangolo.JPG)
-Fiocco:
-![Fiocco](../imgs/FioccoGenerato.JPG)
+Gui:<br>
 
+![DesignGui](../imgs/GUI.JPG)
+<br>
+L'appicazione da la possibilità di aprire un file fiocco di nve già fatto o di creare un nuovo fiocco di neve.
+Triangolo:
+
+![Triangolo](../imgs/Triangolo.JPG)
+<br>
+Se si vuole creare un nuovo fiocco di neve si apre una finestra con un triangolo che cliccando con il mouse si crea un poligono che andrà a tagliare questo triangolo e poi con il pulsante si aprira un'atra finestra che conterrà il fiocco di neve generato in base al taglio generato sul triangolo.
+Fiocco:
+<br>
+
+![Fiocco](../imgs/FioccoGenerato.JPG)
+<br>
+Questa finestra contiene il fiocco generato e 2 pulsanti per salvarlo come immagine vettoriale (SVG) e come immagine raster (PNG).
 
 ## Implementazione
 
