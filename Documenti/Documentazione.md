@@ -153,7 +153,12 @@ L'applicativo si aprira con un <a href="../imgs/GUI.JPG">menú</a> che offre la 
 Il progetto da la possibilita di salvare i fiocchi di neve su files ".csv". Su sito del progetto sono a dispoizione alcuni fiocchi di neve già generati.
 
 ### Design delle interfacce
+Gui:
 ![DesignGui](../imgs/GUI.JPG)
+Triangolo:
+![Triangolo](../imgs/Triangolo.JPG)
+Fiocco:
+![Fiocco](../imgs/FioccoGenerato.JPG)
 
 
 ## Implementazione
