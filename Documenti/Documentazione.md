@@ -74,6 +74,7 @@ Il prodotto finale verrà utilizzato da utenti ai quali piace fare lavori manual
 
 ### Analisi e specifica dei requisiti
 Per questo progetto ci sono stati dati questi requisiti da rispettare:<br>
+
 |ID         |Requisito          |Categoria      |Priorità | Versione|
 |-----------|-------------------|---------------|---------|---------|
 |001|Applicativo in Java|Linguaggio     |1        |1        |
@@ -156,7 +157,7 @@ Gui:<br>
 ![DesignGui](../imgs/GUI.JPG)
 <br>
 L'appicazione da la possibilità di aprire un file fiocco di nve già fatto o di creare un nuovo fiocco di neve.
-Triangolo:
+Triangolo: 
 
 ![Triangolo](../imgs/Triangolo.JPG)
 <br>
