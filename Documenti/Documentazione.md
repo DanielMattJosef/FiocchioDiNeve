@@ -123,7 +123,7 @@ L'utente apre il programma e puo scegliere se aprire un fiocco di neve o di crea
 ### Pianificazione
 
 
-![Gantt iniziale](../GANTT_Progetto/FioccoDiNeve.pdf)
+![Gantt iniziale](GANTT_Progetto/FioccoDiNeve.pdf)
 <a href="../GANTT_Progetto/GanttConsuntivo_ProgettoFioccoDiNeve.pdf">Gantt consuntivo</a>
 
 ### Analisi dei mezzi
@@ -146,7 +146,7 @@ L'applicativo si aprira con un <a href="../imgs/GUI.JPG">menú</a> che offre la 
 
 ### Design dell’architettura del sistema
 
-![UML Progetto](../UML/UML_FioccoDiNeve.png)
+![UML Progetto](UML/UML_FioccoDiNeve.png)
 
 ### Design dei dati e database
 
